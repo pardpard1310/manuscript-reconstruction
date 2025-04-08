@@ -143,6 +143,6 @@ def extract_manuscript_by_manual_contour_selection(input_folder, output_folder):
             print(f"🚫 No contour selected for {filename}")
 
 # === Uso ===
-input_folder = "input_folder"
-output_folder = "output_folder"
+input_folder = "originals"
+output_folder = "cropped"
 extract_manuscript_by_manual_contour_selection(input_folder, output_folder)
