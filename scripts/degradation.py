@@ -12,10 +12,10 @@ def generate_tunnel_mask_and_apply_background_enhanced(image, background, num_tu
 
     for _ in range(num_tunnels):
         x, y = random.randint(0, w - 1), random.randint(int(h * 0.3), int(h * 0.7))  # zona más centrada verticalmente
-        # x, y = random.randint(0, w - 1), random.randint(int(h * 0.4), int(h * 0.6))  # zona más centrada verticalmente
+        # x, y = random.randint(0, w - 1), random.randint(int(h * 0.4), int(h * 0.6))  # variacion
         angle = random.uniform(-np.pi / 3, np.pi / 3)  # dirección horizontal o diagonal suave
         length = random.randint(*length_range)
-        # thickness = random.randint(4, 8)
+        # thickness = random.randint(4, 8)  #variacion
         thickness = random.randint(10, 12)
 
         points = []
