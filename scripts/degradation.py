@@ -67,8 +67,8 @@ def apply_final_tunnel_effect(input_path, bg_path, output_path, num_tunnels=20, 
 
 # --- USO DE EJEMPLO ---
 
-input_folder = 'input_images'
-output_folder = 'output_images'
+input_folder = 'cropped'
+output_folder = 'degraded'
 bg_path = 'IMG/reference_image.PNG'
 # num_tunnels_range = (1, 4)
 num_tunnels_range = (20, 40)
