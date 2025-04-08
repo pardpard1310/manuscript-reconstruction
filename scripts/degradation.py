@@ -11,7 +11,7 @@ def generate_tunnel_mask_and_apply_background_enhanced(image, background, num_tu
     mask = np.ones((h, w), dtype=np.uint8) * 255  # 255 = intacto, 0 = túnel
 
     for _ in range(num_tunnels):
-        x, y = random.randint(0, w - 1), random.randint(int(h * 0.3), int(h * 0.7))  # zona más centrada verticalmente
+        x, y = random.randint(0, w - 1), random.randint(int(h * 0.1), int(h * 0.9))  # zona más centrada verticalmente
         # x, y = random.randint(0, w - 1), random.randint(int(h * 0.4), int(h * 0.6))  # variacion
         angle = random.uniform(-np.pi / 3, np.pi / 3)  # dirección horizontal o diagonal suave
         length = random.randint(*length_range)
